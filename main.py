@@ -175,7 +175,7 @@ class Calulator(customtkinter.CTk):
         elif(self.arithmeticType == "Divide"):
             answerToWrite = self.previousValue / float(self.textbox.get("0.0", "end"))
         self.ClearValue()
-        self.WriteNumber(answerToWrite)
+        self.WriteNumber(round(answerToWrite, 5))
         self.arithmeticPressed = True
 
 
